@@ -10,11 +10,9 @@ function mostrarNombre() {
  } else {
   saludo.textContent = "Hola, " + nombre + ", de " + ciudad; 
  }
-}
-
+ 
 function borrar() {
- localStorage.removeItem("nombre");
- localStorage.removeItem("ciudad");
+ sessionStorage.removeItem("nombre");
  mostrarNombre();
 }
 
